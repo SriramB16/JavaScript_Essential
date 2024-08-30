@@ -55,3 +55,19 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+
+let person = "employee";
+let services;
+
+if(person === "employee") {
+    services = "You are authorized to have access to 'Dietary Services'";
+} else if (person === "enrolled member") {
+    services = "You are authorized to have access to 'Dietary Services' and one-on-one interaction with a dietician"
+}else if (person === "subscriber") {
+    services ='You are authorized to have partial access to facilitate "Dietary Services" only'
+}else {
+    services = "You need to enroll or at least subscribe first to avail this facility."
+}
+
+console.log("Dietry Service:",services )
